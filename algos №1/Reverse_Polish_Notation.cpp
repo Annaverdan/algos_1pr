@@ -7,7 +7,7 @@
 using namespace std;
 
 
-//сократила character на ch, operand на op для удобства
+//СЃРѕРєСЂР°С‚РёР»Р° character РЅР° ch, operand РЅР° op РґР»СЏ СѓРґРѕР±СЃС‚РІР°
 int Reverse_Polish_Notation::get_priority(const string& ch) {
     if (ch == "+" || ch == "-") return 1;
     if (ch == "*" || ch == "/") return 2;
@@ -110,7 +110,7 @@ void Reverse_Polish_Notation::convert(const string& input) {
     }
     
     int size = outputList.get_size();
-    cout << "Обратная польская нотация: ";
+    cout << "РћР±СЂР°С‚РЅР°СЏ РїРѕР»СЊСЃРєР°СЏ РЅРѕС‚Р°С†РёСЏ: ";
     for (int i = 0; i < size; i++) {
         cout << outputList.get(i) << " ";
     }

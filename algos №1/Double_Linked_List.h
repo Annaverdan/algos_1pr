@@ -57,7 +57,7 @@ void Double_Linked_List<List>::add(List num) {
 template <typename List>
 void Double_Linked_List<List>::add_index(int index, List num) {
     if (index < 0 || index > size) {
-        cout << "Введен некорректный индекс";
+        cout << "Р’РІРµРґРµРЅ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РёРЅРґРµРєСЃ";
     }
     if (index == size) {
         add(num);
@@ -94,7 +94,7 @@ void Double_Linked_List<List>::add_index(int index, List num) {
 template <typename List>
 List Double_Linked_List<List>::get(int index) const {
     if (index < 0 || index >= size) {
-        cout << "Введен некорректный индекс";
+        cout << "Р’РІРµРґРµРЅ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РёРЅРґРµРєСЃ";
     }
     Node* curr = head;
     for (int i = 0; i < index; i++) {
@@ -106,7 +106,7 @@ List Double_Linked_List<List>::get(int index) const {
 template <typename List>
 List Double_Linked_List<List>::remove(int index) {
     if (index < 0 || index >= size) {
-        cout << "Введен некорректный индекс";
+        cout << "Р’РІРµРґРµРЅ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РёРЅРґРµРєСЃ";
     }
 
     Node* curr = head;
@@ -135,7 +135,7 @@ List Double_Linked_List<List>::remove(int index) {
 template <typename List>
 List Double_Linked_List<List>::set(int index, List num) {
     if (index < 0 || index >= size) {
-        cout << "Введен некорректный индекс";
+        cout << "Р’РІРµРґРµРЅ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РёРЅРґРµРєСЃ";
     }
 
     Node* curr = head;
@@ -158,13 +158,13 @@ int Double_Linked_List<List>::get_size() const {
     return size;
 }
 
-//получить хвост
+//РїРѕР»СѓС‡РµРЅРёРµ С…РІРѕСЃС‚Р° (РєРѕРЅРµС†)
 template <typename List>
 typename Double_Linked_List<List>::Node* Double_Linked_List<List>::get_tail() const {
     return tail;
 }
 
-//получить голову
+//РїРѕР»СѓС‡РµРЅРёРµ РіРѕР»РѕРІС‹ (РЅР°С‡Р°Р»Рѕ)
 template <typename List>
 typename Double_Linked_List<List>::Node* Double_Linked_List<List>::get_head() const {
     return head;

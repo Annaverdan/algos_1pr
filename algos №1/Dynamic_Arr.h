@@ -69,7 +69,7 @@ void Dynamic_Arr<List>::add(List value) {
 template <typename List>
 void Dynamic_Arr<List>::add_index(int index, List value) {
     if (index < 0 || index > tsize) {
-        cout << "Íåêîððåêòíûé èíäåêñ";
+        cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
     }
     if (tsize >= size) {
         resize();
@@ -84,7 +84,7 @@ void Dynamic_Arr<List>::add_index(int index, List value) {
 template <typename List>
 void Dynamic_Arr<List>::remove(int index) {
     if (index < 0 || index >= tsize) {
-        cout << "Íåêîððåêòíûé èíäåêñ";
+        cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
     }
     for (int i = index; i < tsize - 1; i++) {
         arr[i] = arr[i + 1];
@@ -95,7 +95,7 @@ void Dynamic_Arr<List>::remove(int index) {
 template <typename List>
 List Dynamic_Arr<List>::get(int index) const {
     if (index < 0 || index >= tsize) {
-        cout << "Íåêîððåêòíûé èíäåêñ";
+        cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
     }
     return arr[index];
 }
@@ -103,7 +103,7 @@ List Dynamic_Arr<List>::get(int index) const {
 template <typename List>
 void Dynamic_Arr<List>::set(int index, List value) {
     if (index < 0 || index >= tsize) {
-        cout << "Íåêîððåêòíûé èíäåêñ";
+        cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
     }
     arr[index] = value;
 }

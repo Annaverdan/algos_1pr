@@ -30,7 +30,7 @@ void Stack<List>::push(List data) {
 template <typename List>
 List Stack<List>::pop() {
     if (empty()) {
-        cout << "Стек пуст";
+        cout << "Stack is empty";
     }
     int lastIndex = list.get_size() - 1;
     return list.remove(lastIndex);
@@ -39,7 +39,7 @@ List Stack<List>::pop() {
 template <typename List>
 List Stack<List>::peek() const {
     if (empty()) {
-        cout << "Стек пуст";
+        cout << "Stack is empty";
     }
     int lastIndex = list.get_size() - 1;
     return list.get(lastIndex);
